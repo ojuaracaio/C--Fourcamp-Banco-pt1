@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Banco_pt1 
 {
@@ -7,7 +8,8 @@ namespace Banco_pt1
         public static void Main(string[] args)
         {
 
-            string opcao, nome, cpf, deposito;
+            string opcao, nome, cpf, leitura;
+            decimal deposito, transferir;
             Cliente cliente1;
             Conta conta1;
             //int contadorConta = 1;
@@ -21,7 +23,7 @@ namespace Banco_pt1
             Console.WriteLine("Digite o cpf do cliente (sem pontuação):");
             cpf = Console.ReadLine();
 
-            while (cpf.Length != 11)
+            while (cpf.Length != 11 || !cpf.All(Char.IsNumber)) // cpf.All(Char.IsDigit)   !ulong.TryParse(cpf,out _)
             {
                 Console.WriteLine("Número de CPF inválido, digite novamente.");
                 cpf = Console.ReadLine();
@@ -52,27 +54,39 @@ namespace Banco_pt1
                         nome = Console.ReadLine();
                         Console.WriteLine("Digite o cpf do cliente (sem pontuação):");
                         cpf = Console.ReadLine();
-                        //verificação do cpf
 
-                        while (cpf.Length != 11)
+                        //verificação do cpf
+                        while (cpf.Length != 11 || !cpf.All(Char.IsNumber))
                         {
                             Console.WriteLine("Número de CPF inválido, digite novamente.");
                             cpf = Console.ReadLine();
                         }
-                        //
                         cliente1 = new Cliente(nome, cpf);
-                        //contadorConta++;
                         conta1 = new Conta("0001", cliente1);
                         break;
                     case "2":
                         //transferir
-                        Console.WriteLine("Opção 2");
+                        Console.WriteLine("Quanto deseja transferir?");
+                        leitura = Console.ReadLine();
+                        while (!decimal.TryParse(leitura, out transferir)) //checa se é possível converter a entrada para decimal
+                        {
+                            Console.WriteLine("Valor inválido. Use apenas números.");
+                            leitura = Console.ReadLine();
+                        }
+                        conta1.transferir(transferir);
                         break;
                     case "3":
                         //depositar
                         Console.WriteLine("Quanto deseja depositar?");
-                        deposito = Console.ReadLine();
-                        conta1.depositar(decimal.Parse(deposito));
+                        leitura = Console.ReadLine();
+
+                        while (!decimal.TryParse(leitura, out deposito)) //checa se é possível converter a entrada para decimal
+                        {
+                            Console.WriteLine("Valor inválido. Use apenas números.");
+                            leitura = Console.ReadLine();
+                        }
+                        conta1.depositar(deposito);
+
                         break;
                     case "4":
                         //mostrar dados
