@@ -1,0 +1,16 @@
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\bin\Debug\net5.0\Banco_pt1.exe
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\bin\Debug\net5.0\Banco_pt1.deps.json
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\bin\Debug\net5.0\Banco_pt1.runtimeconfig.json
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\bin\Debug\net5.0\Banco_pt1.runtimeconfig.dev.json
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\bin\Debug\net5.0\Banco_pt1.dll
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\bin\Debug\net5.0\ref\Banco_pt1.dll
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\bin\Debug\net5.0\Banco_pt1.pdb
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\Banco_pt1.csproj.AssemblyReference.cache
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\Banco_pt1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\Banco_pt1.AssemblyInfoInputs.cache
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\Banco_pt1.AssemblyInfo.cs
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\Banco_pt1.csproj.CoreCompileInputs.cache
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\Banco_pt1.dll
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\ref\Banco_pt1.dll
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\Banco_pt1.pdb
+C:\Users\caicangussu\Documents\GitHub\CS-FourCamp\CS-FourCamp\Banco_pt1\Banco_pt1\obj\Debug\net5.0\Banco_pt1.genruntimeconfig.cache
