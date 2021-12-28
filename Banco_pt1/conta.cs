@@ -1,18 +1,13 @@
 ﻿using System;
 
-public class Conta
+public abstract class Conta
 {
-    string numero;
-    private decimal saldo;
-    Cliente cliente;
+    public string numero { get; set; }
+    private protected decimal saldo { get; set; }
+    public Cliente cliente { get; set; }
 
-    public Conta(string numeroConta, Cliente clienteConta)
+    public Conta()
     {
-        saldo = 0;
-        numero = numeroConta;
-        cliente = clienteConta;
-        //Console.WriteLine($"O cliente {cliente.nome} criou a conta nº {numeroConta}.");
-        atualizarTipo();
 
     }
 
@@ -41,6 +36,8 @@ public class Conta
 
         //nome e cpf
         Console.WriteLine($"Cliente: {cliente.nome} / CPF: {cliente.cpf}");
+        //data de nascimento
+        Console.WriteLine($"Data de Nascimento: {cliente.dataNascimento.ToShortDateString()}");
         //numero
         Console.WriteLine($"Número: {numero}");
         //saldo
