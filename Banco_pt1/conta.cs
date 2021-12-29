@@ -30,22 +30,7 @@ public abstract class Conta
         }
     }
 
-    public void imprimirDados()
-    {
-        atualizarTipo();// certeza que o tipo correto será mostrado
-
-        //nome e cpf
-        Console.WriteLine($"Cliente: {cliente.nome} / CPF: {cliente.cpf}");
-        //data de nascimento
-        Console.WriteLine($"Data de Nascimento: {cliente.dataNascimento.ToShortDateString()}");
-        //numero
-        Console.WriteLine($"Número: {numero}");
-        //saldo
-        Console.WriteLine($"Saldo: R${string.Format("{0:0.00}",saldo)}");
-        //tipo
-        Console.WriteLine($"Tipo da Conta: {cliente.tipo}");
-
-    }
+    public abstract void imprimirDados();
 
     public void depositar(decimal quantia)
     {

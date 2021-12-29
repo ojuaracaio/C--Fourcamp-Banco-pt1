@@ -22,6 +22,30 @@ namespace Banco_pt1
         {
             saldo *= (1 + (decimal)taxaRendimento);
             Console.WriteLine("Rendimento adicionado.");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine($"Novo saldo na conta poupança: R${string.Format("{0:0.00}", saldo)}");
+            atualizarTipo();
+        }
+
+        public override void imprimirDados()
+        {
+            atualizarTipo();// certeza que o tipo correto será mostrado
+
+            Console.WriteLine();
+            Console.WriteLine("================= CONTA POUPANÇA =================");
+            //nome e cpf
+            Console.WriteLine($"Cliente: {cliente.nome} / CPF: {cliente.cpf}");
+            //data de nascimento
+            Console.WriteLine($"Data de Nascimento: {cliente.dataNascimento.ToShortDateString()}");
+            //numero
+            Console.WriteLine($"Número: {numero}");
+            //saldo
+            Console.WriteLine($"Saldo: R${string.Format("{0:0.00}", saldo)}");
+            //tipo
+            Console.WriteLine($"Tipo da Conta: {cliente.tipo}");
+            Console.WriteLine("========================================");
+            Console.WriteLine();
+
         }
     }
 }   
